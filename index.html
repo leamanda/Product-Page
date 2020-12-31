@@ -1,10 +1,41 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <style>
+    body {
+        background-color: rgb(243, 240, 240);
+    }
+
    #header-img {
         width: 300px;
    }
    #nav-bar {
        text-align: right;
+   }
+
+   #introduction {
+       font-weight: bold;
+       font-size: 1.5em;
+       margin: 3% 5% 2% 5%;
+   }
+
+   #form {
+       text-align: center;
+
+   }
+
+   #email {
+       width: 35%;
+   }
+
+   #get-started {
+       margin-top: 2%;
+       font-weight: bold;
+       padding: 1.5em;
+       background: gold;
+       border: hidden;
+   }
+
+   .how-to {
+        text-align: center;
    }
 
    #price {
@@ -21,6 +52,17 @@
        background-color: rgb(197, 192, 192);
        padding: 10px;
        margin: 0px;
+   }
+
+   .price-description {
+       line-height: 1.5em;
+   }
+
+   .submit {
+       padding: 5% 10% 5% 10%;
+       background: gold;
+       border: hidden;
+       margin: 10% 5% 5% 5%;
    }
 
 </style>
@@ -44,13 +86,16 @@
                 </nav>
             </header>
             <form id="form">
+                <div id="introduction">
+                    Handcrafted, home-made materpieces
+                </div>
                 <input type="email" 
                         id="email" 
                         name="email"
                         placeholder="Enter your email address"
                 >
                 <div id="submit-button">
-                    <input type="submit" id="submit"><br>
+                    <input type="submit" value="Get Started" id="get-started"><br>
                 </div>
             </form>
             <div id="features">
@@ -76,9 +121,11 @@
                     </div><br>
                 </div>
             </div>
-            <iframe  id="video" width="420" height="315"
-            src="https://www.youtube.com/embed/y8Yv4pnO7qc">
-            </iframe><br>
+            <div class="how-to">
+                <iframe  id="video" width="420" height="315"
+                src="https://www.youtube.com/embed/y8Yv4pnO7qc">
+                </iframe><br>
+            </div>
             <div id="price">
                 <div class="price-item">
                     <h4 class="price-title">Tenor Trombone</h3>
@@ -89,8 +136,8 @@
                         Lorem ipsum dolor.<br>
                         Lorem ipsum.<br>
                     </div>
-                    <div id="submit-button">
-                        <input type="submit" id="submit"><br>
+                    <div class="price-button">
+                        <input type="submit" class="submit"><br>
                     </div>
                 </div>
                 <div class="price-item">
@@ -102,8 +149,8 @@
                         Lorem ipsum dolor.<br>
                         Lorem ipsum.<br>
                     </div>
-                    <div id="submit-button">
-                        <input type="submit" id="submit"><br>
+                    <div class="price-button">
+                        <input type="submit" class="submit"><br>
                     </div>
                 </div>
                 <div class="price-item">
@@ -115,8 +162,8 @@
                         Lorem ipsum dolor.<br>
                         Lorem ipsum.<br>
                     </div>
-                    <div id="submit-button">
-                        <input type="submit" id="submit"><br>
+                    <div class="price-button">
+                        <input type="submit" class="submit"><br>
                     </div>
                 </div>
             </div>
